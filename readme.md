@@ -11,4 +11,4 @@ Dentro del proyecto hay 4 carpetas:
 + js
 + articulos
 
-las únicas carpetas que se deben modificar es images  y articulos (para agregar nuevas imagenes y recursos a la línea del tiempo).
+Las únicas carpetas que se deben modificar es images  y articulos (para agregar nuevas imagenes y recursos a la línea del tiempo).
