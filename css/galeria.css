@@ -1,0 +1,35 @@
+#galeria {
+    float: left;
+    margin: 10px 30px 10px 50px;
+    background: transparent;  /* Fondo de la galería */
+    width: 370px;  /* Ancho de la galería */
+    height: 300px; /* Alto de la galería */
+}
+.imagen_galeria {
+    width: 370px; /* Ancho de la imagen */
+    height: 230px; /* Alto de la imagen */
+}
+#galeria_miniaturas {
+    display: table;
+    width: 370px;
+    height: 70px;
+    background: transparent;
+}
+.miniatura {
+    width:  85.5px;  /* Ancho de las miniaturas */
+    height:  60px;  /* Alto de las miniaturas */
+    cursor: pointer;
+    padding: 5px 3.5px;
+}
+.miniatura:hover {
+    opacity:.8;   /* Opacidad */
+    -moz-opacity:.8;
+    -khtml-opacity:.8;
+    filter:alpha(opacity=80);
+}
+.miniatura:active {
+    opacity:1;
+    -moz-opacity:1;
+    -khtml-opacity:1;
+    filter:alpha(opacity=80);
+}

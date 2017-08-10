@@ -5,9 +5,11 @@
 	
 	<title>EDIS</title>
 	<link rel="stylesheet" href="css/style.css" media="screen" />
+	<link rel="stylesheet" href="css/galeria.css" media="screen" />
 	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script src="js/jquery.timelinr-0.9.6.js"></script>
+	<script src="js/galeria.js"></script>
 
 	<script>
 		$(function(){
@@ -29,7 +31,7 @@
 			<li><a href="#1958">1958</a></li>
 			<li><a href="#1960">1960</a></li>
 			<li><a href="#1962">1962</a></li>
-            <li><a href="#1991-1">1991</a></li>
+            <li><a href="#1991">1991</a></li>
             <li><a href="#1992-1">1992</a></li>
             <li><a href="#1992-2">1992</a></li>
 			<li><a href="#1993-1">1993</a></li>
@@ -50,29 +52,47 @@
 		<ul id="issues">
 
 			<li id="1958">
-				<img src="images/inicio.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1958" class="imagen_galeria" src="images/1958/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1958, this.src)" src="images/1958/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1958, this.src)" src="images/1958/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1958, this.src)" src="images/1958/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1958, this.src)" src="images/1958/4.jpg" />
+					</div>
+				</div>
+				<!--<img src="images/inicio.png" width="256" height="256" />-->
 				<h1>5 de Dic 1958</h1>
 				<h2>Por el cual se organiza la Empresa Distrital de Aseo.</h2>
 				<p>
 					Créase la Empresa Distrital de Aseo como entidad autónoma descentralizada, con patrimonio especial y personería jurídica, para la prestación de los servicios de barrido y limpieza de las calles, recolección de basuras.
 				</p>
 				<br>
-				<section >
-                <div id="container_buttons">
-                   <center>
-					    <p>
-                        <a target="_blank" href="articulos/creacion.pdf" class="a_demo_four">
-                            Ir al Recurso
-                        </a>
-                    </p>
-				   </center>
-                </div>
-			</section>
+				<section>
+					<div id="container_buttons">
+					<center>
+							<p>
+							<a target="_blank" href="articulos/creacion.pdf" class="a_demo_four">
+								Ir al Recurso
+							</a>
+						</p>
+					</center>
+					</div>
+				</section>
 			</li>
 
 
 			<li id="1960">
-				<img src="images/organizacion.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1960" class="imagen_galeria" src="images/1960/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1960, this.src)" src="images/1960/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1960, this.src)" src="images/1960/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1960, this.src)" src="images/1960/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1960, this.src)" src="images/1960/4.jpg" />
+					</div>
+				</div>
+				<!--<img src="images/organizacion.png" width="256" height="256" />-->
 				<h1>20 de Dic 1960</h1>
 				<h2>Por el cual se reorganiza la Empresa Distrital de Aseo</h2>
 				<p>
@@ -93,7 +113,15 @@
 			</li>
 
 			<li id="1962">
-				<img src="images/dinero.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1962" class="imagen_galeria" src="images/1962/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1962, this.src)" src="images/1962/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1962, this.src)" src="images/1962/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1962, this.src)" src="images/1962/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1962, this.src)" src="images/1962/4.jpg" />
+					</div>
+				</div>
 				<h1>27 de Oct 1962</h1>
 				<h2>Por el cual se da una participación a la Empresa Distrital de Servicios Público</h2>
 				<p>
@@ -113,13 +141,21 @@
 			</section>
 			</li>
             
-            <li id="1991-1">
-				<img src="images/eltiempo.png" width="256" height="256" />
+            <li id="1991">
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>24 de Enero de 1991</h1>
 				<h2>Bogota no puede afrontar mas crisis de EDIS</h2>
 				<p>
                  El concejal Germán Vargas Lleras recordó que en el período de sesiones del Concejo que se inició el 1o. de agosto, fue él quien
-                    primero dió la voz de alarma sobre la crisis de la Empresa Distrital de Servicios Públicos (Edis). En una carta al director de EL TIEMPO referente a una nota de la sección Cosas del Día , el dirigente liberal declara que en el debate sobre la Edis no lo mueve ningún interés distinto al de trabajar por Bogotá y que no hay persona alguna recomendada por él en la Empresa.
+                    primero dió la voz de alarma sobre la crisis de la Empresa Distrital de Servicios Públicos (Edis). 
 				</p>
 				<br>
 				<section >
@@ -138,11 +174,19 @@
             
             
             <li id="1992-1">
-				<img src="images/eltiempo.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>2 de Octubre de 1992</h1>
 				<h2>EDIS deja colgados a consorcios</h2>
 				<p>
-                 Unidos en el infortunio. Así podría catalogarse la situación de los consorcios particulares Ciudad Limpia, Limpieza Metropolitana (Lime) y Aseo Capital a los que la Empresa Distrital de Servicios Públicos (Edis) les adeuda cerca de 3.900 millones de pesos, desde que inició la actual administración. Los consorcios, que atienden en total el 60 por ciento del aseo de la ciudad, atraviesan por una época de vacas flacas que los ha obligado a acudir a la banca y a los recursos de sus socios para poder pagar sus nóminas y gastos de funcionamiento.
+                 Unidos en el infortunio. Así podría catalogarse la situación de los consorcios particulares Ciudad Limpia, Limpieza Metropolitana (Lime) y Aseo Capital a los que la Empresa Distrital de Servicios Públicos (Edis) les adeuda cerca de 3.900 millones de pesos, desde que inició la actual administración. 
 				</p>
 				<br>
 				<section >
@@ -159,7 +203,15 @@
 			</li>
             
             <li id="1992-2">
-				<img src="images/eltiempo.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>27 de Octubre de 1992</h1>
 				<h2>Aseo Capital y EDIS llegan a un acuerdo</h2>
 				<p>
@@ -167,9 +219,6 @@
                 acuerdo para reducir el índice de reajuste de su precio, con el cual la Edis ahorraría
                 1.300 millones de pesos durante los cinco años que dura el contrato con esa firma
                 (casi 300 millones por año).
-                La idea es la de que el consorcio empiece inicialmente seis meses a lo sumo
-                haciendo un censo de los grandes productores que hay en una parte de la zona de
-                Edis para luego, prestar el servicio de recolección.
 				</p>
 				<br>
 				<section >
@@ -186,7 +235,15 @@
 			</li>
 
 			<li id="1993-1">
-				<img src="images/junta.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>24 de Agosto 1993</h1>
 				<h2>composición de la Junta directiva</h2>
 				<p>
@@ -207,11 +264,21 @@
 			</li>
             
             <li id="1993-2">
-				<img src="images/eltiempo.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>15 de Septiembre de 1993</h1>
 				<h2>EDIS recoge la basura en la noche </h2>
 				<p>
-					   La Empresa Distrital de Servicios Públicos (Edis) inició el programa de recolección de basuras en horario nocturno en cerca de 250 barrios de toda la ciudad. La medida busca optimizar el servicio mediante una mejor utilización de los vehículos    recolectores y de los escobitas. Según el subgerente operativo de la Edis Orlando Pinzón, el barrido de las calles se adelantará también en horas de la tarde, y por sectores, dos veces por semana.
+					La Empresa Distrital de Servicios Públicos (Edis) inició el programa de recolección de basuras 
+					en horario nocturno en cerca de 250 barrios de toda la ciudad. La medida busca optimizar el servicio 
+					mediante una mejor utilización de los vehículos    recolectores y de los escobitas.
 			    </p>
 				<br>
 				<section >
@@ -228,7 +295,15 @@
 			</li>
 
 			<li id="1993-3">
-				<img src="images/basura.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>30 de Dic 1993</h1>
 				<h2>Disposiciones Finales </h2>
 				<p>
@@ -249,7 +324,15 @@
 			</li>
             
             <li id="1993-4">
-				<img src="images/eltiempo.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>16 de Dic de 1993</h1>
 				<h2>Al Alcalde paso la responsabilidad del aseo </h2>
 				<p>
@@ -271,12 +354,21 @@
 			</li>
             
             <li id="1993-5">
-				<img src="images/eltiempo.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>18 de Dic de 1993</h1>
 				<h2>jaime Eduardo Velez nuevo gerente de EDIS </h2>
 				<p>
-					Jaime Eduardo Vélez Ramírez, ingeniero de la Universidad de los Andes, bogotano de 39 años de edad, exasesor de Andrés
-                    Pastrana en la privatización de parte del servicio de aseo, fue nombrado gerente liquidador de la Empresa Distrital de Servicios Públicos. La noticia la dió el propio Alcalde Mayor, Jaime Castro, en su reunión informal con los concejales, tras decir que había aceptado la renuncia de Camilo Silva Zárate, quien tuvo a su cargo la defensa del proyecto de liquidación.
+					Jaime Eduardo Vélez Ramírez, ingeniero de la Universidad de los Andes, bogotano 
+					de 39 años de edad, exasesor de Andrés Pastrana en la privatización de parte del servicio 
+					de aseo, fue nombrado gerente liquidador de la Empresa Distrital de Servicios Públicos.
 			    </p>
 				<br>
 				<section >
@@ -294,14 +386,21 @@
             
             
             <li id="1994-1">
-				<img src="images/eltiempo.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>6 de Enero de 1994</h1>
 				<h2>EDIS sigue colgada con la basura</h2>
 				<p>
 					Como están las cosas, ni con camiones o volquetas contratadas, la Empresa Distrital de Servicios Públicos (Edis) alcanza a
                     recoger toda la basura del sector de la ciudad que le corresponde (42%). Los cúmulos de desechos siguen apareciendo en
-                    andenes, esquinas, separadores y zonas verdes. Los vecinos de los sectores más afectados comienzan a quejarse no sólo por la
-                    acumulación de desperdicios caseros y de construcción sino de la aparición de ratones, moscos, zancudos y malos olores.
+                    andenes, esquinas, separadores y zonas verdes.
 				</p>
 				<br>
 				<section >
@@ -318,7 +417,15 @@
 			</li>
             
             <li id="1994-2">
-				<img src="images/eltiempo.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>13 de Enero 1994</h1>
 				<h2>Personeria investiga gerente de EDIS</h2>
 				<p>
@@ -339,7 +446,15 @@
 			</li>
 
 			<li id="1994-3">
-				<img src="images/eltiempo.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>2 de Febrero 1994</h1>
 				<h2>LA LIQUIDACIÓN DE LA EDIS, EL ACUERDO MÁS DESTACADO</h2>
 				<p>
@@ -363,7 +478,15 @@
 
 
 			<li id="1994-4">
-				<img src="images/juez.png" width="200" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>30 de Marzo 1994</h1>
 				<h2>DECRETO 159 DE 1994</h2>
 				<p>
@@ -384,7 +507,15 @@
 			</li>
             
             <li id="1994-5">
-				<img src="images/eltiempo.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>31 de Mayo 1994</h1>
 				<h2>EDIS suspende la recoleccion</h2>
 				<p>
@@ -410,7 +541,15 @@
             
 
 			<li id="1995">
-				<img src="images/miembros.png" width="400"  />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>31 de Oct 1995</h1>
 				<h2>DECRETO 635 DE 1995</h2>
 				<p>
@@ -433,7 +572,15 @@
 
 
 			<li id="1996">
-				<img src="images/2.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>31 de Julio 1996</h1>
 				<h2>Sentencia 8860 de 1999 Tribunal Superior del Distrito Judicial</h2>
 				<p>
@@ -458,7 +605,15 @@
 
 
 			<li id="1999">
-				<img src="images/dic.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>24 de Sept 1999</h1>
 				<h2>Sentencia 8860 de 1999 Tribunal Superior del Distrito Judicial</h2>
 				<p>
@@ -482,7 +637,15 @@
 
             
             <li id="2012">
-				<img src="images/EE.png" width="256" height="256" />
+				<div id="galeria">
+					<img id="galeria_1991" class="imagen_galeria" src="images/1991/1.jpg" />
+					<div id="galeria_miniaturas">
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/1.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/2.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/3.jpg" />
+						<img class="miniatura" onclick="cambiarImagen(1991, this.src)" src="images/1991/4.jpg" />
+					</div>
+				</div>
 				<h1>24 de Agosto de 2012</h1>
 				<h2>Las lecciones de la EDIS</h2>
 				<p>
@@ -490,8 +653,7 @@
                     Públicos (Edis), desaparecida en 1993, es de ingrata recordación en la ciudad. Un
                     año antes de que el Concejo ordenara su supresión y liquidación, la recolección de
                     las basuras que tenía a cargo esta entidad dejó de prestarse en la mitad de la zona
-                    norte. El panorama en algunas calles era apocalíptico. La emergencia sanitaria era
-                    permanente.
+                    norte. 
 				</p>
 				<br>
 				<section >
